@@ -1,0 +1,23 @@
+html,
+body,
+div,
+iframe {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+iframe {
+    display: block;
+    width: 100%;
+    border: none;
+}
+body {
+    background-image: url(../images/fondotour.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Thasadith', sans-serif;
+}
+select {
+    clear: both;
+}
