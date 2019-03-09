@@ -1,4 +1,45 @@
-index{
-    
-    
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+.bg {
+    /* The image used */
+    background-image: url(../images/fondo.jpg);
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: 'Thasadith', sans-serif;
+}
+#pie {
+    background-color: rgba(44, 38, 38, 0.51);
+}
+
+a{
+    color: white;
+}
+
+a:hover{
+    color: #c1c1c1;
+    text-decoration-line: none;
+}
+
+
+.centrado-porcentual {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
 }
