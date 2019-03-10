@@ -7,11 +7,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/contacto.css">
     <link rel="icon" href="./images/favicon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Thasadith" rel="stylesheet">
+    <script src="./js/contacto.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 
-<body>
-   <header>
+<body id="text_Body">
+    <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <img src="./images/favicon.png" width="30" height="30" alt="">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,11 +34,45 @@
                     <li class="nav-item active">
                         <a class="nav-link " href="./contacto.html">Contacto</a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-font nav-link"></i> Fuentes</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="MySelectMenu">
+                            <option class="dropdown-item" onclick="changeFont (this);" value="'Thasadith', sans-serif" id="input-font">Thasadith',sans-serif</option>
+                            <option class="dropdown-item" id="input-font" onclick="changeFont (this);" value="Arial">Arial</option>
+                            <option class="dropdown-item" id="input-font" onclick="changeFont (this);" value="'Raleway', sans-serif">'Raleway', sans-serif;</option>
+
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-palette nav-link"></i> Colores</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="MySelectMenu">
+                           <option class="dropdown-item" onclick="changeBG (this);" value="#ffffff">Blanco</option>
+                            <option class="dropdown-item" onclick="changeBG (this);" value="#2f59e5">Azul</option>
+                            <option class="dropdown-item" onclick="changeBG (this);" value="#dd2727">Rojo</option>
+                            <option class="dropdown-item" onclick="changeBG (this);" value="#000000">Negro</option>
+                            <option class="dropdown-item" onclick="changeBG (this);" value="#eb7d10">Naranja</option>
+                        </div>
+                    </li>
+                    
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-palette nav-link"></i> Color de fuente</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="MySelectMenu">
+                            <option class="dropdown-item" onclick=" colorFont (this);" value="#000000">Negro</option>
+                            <option class="dropdown-item" onclick=" colorFont (this);" value="#ffffff">Blanco</option>
+                            <option class="dropdown-item" onclick=" colorFont (this);" value="#0986f2">Azul</option>
+                            <option class="dropdown-item" onclick=" colorFont (this);" value="#f5ff00">Amarillo</option>
+                        </div>
+                    </li>
+                    
+                    
+                   
+                    
                 </ul>
             </div>
         </nav>
     </header>
-   
+
     <div class="container mt-5">
         <div style="text-align:center">
             <h2>Forma de contacto</h2>
@@ -64,7 +101,7 @@
             </div>
         </div>
     </div>
-    
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

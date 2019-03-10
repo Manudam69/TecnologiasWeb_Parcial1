@@ -9,9 +9,12 @@
     <link rel="icon" href="./images/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Thasadith" rel="stylesheet">
     <script type="text/jscript" src="./js/ubicacion.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="./js/contacto.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 
-<body>
+<body id="text_Body">
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <img src="./images/favicon.png" width="30" height="30" alt="">
@@ -32,6 +35,35 @@
                     <li class="nav-item">
                         <a class="nav-link " href="contacto.html">Contacto</a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-font nav-link"></i> Fuentes</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="MySelectMenu">
+                            <option class="dropdown-item" onclick="changeFont (this);" value="'Thasadith', sans-serif" id="input-font">Thasadith',sans-serif</option>
+                            <option class="dropdown-item" id="input-font" onclick="changeFont (this);" value="Arial">Arial</option>
+                            <option class="dropdown-item" id="input-font" onclick="changeFont (this);" value="'Raleway', sans-serif">'Raleway', sans-serif;</option>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-palette nav-link"></i> Colores</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="MySelectMenu">
+                           <option class="dropdown-item" onclick="changeBG (this);" value="#ffffff">Blanco</option>
+                            <option class="dropdown-item" onclick="changeBG (this);" value="#2f59e5">Azul</option>
+                            <option class="dropdown-item" onclick="changeBG (this);" value="#dd2727">Rojo</option>
+                            <option class="dropdown-item" onclick="changeBG (this);" value="#000000">Negro</option>
+                            <option class="dropdown-item" onclick="changeBG (this);" value="#eb7d10">Naranja</option>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-palette nav-link"></i> Color de fuente</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="MySelectMenu">
+                            <option class="dropdown-item" onclick=" colorFont (this);" value="#000000">Negro</option>
+                            <option class="dropdown-item" onclick=" colorFont (this);" value="#ffffff">Blanco</option>
+                            <option class="dropdown-item" onclick=" colorFont (this);" value="#0986f2">Azul</option>
+                            <option class="dropdown-item" onclick=" colorFont (this);" value="#f5ff00">Amarillo</option>
+                        </div>
+                    </li>
+
                 </ul>
             </div>
         </nav>
@@ -39,25 +71,25 @@
 
 
     <div class="container mt-3">
-       <div class="row">
-        <div class="text-center embed-responsive embed-responsive-1by1 col-md-6">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17612.193714063273!2d-102.2917509226788!3d21.876519372432536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x56d2739c0f2f8b4d!2sMuseo+Espacio!5e0!3m2!1ses-419!2smx!4v1552098454065" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div class="row">
+            <div class="text-center embed-responsive embed-responsive-1by1 col-md-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17612.193714063273!2d-102.2917509226788!3d21.876519372432536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x56d2739c0f2f8b4d!2sMuseo+Espacio!5e0!3m2!1ses-419!2smx!4v1552098454065" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+            <div class="container text-justify col-md-6">
+                <p class="h2 text-center"><b>Donde encontrarnos</b></p>
+                <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit perferendis, velit non quia atque nesciunt, rerum deserunt tempore dolorem! Ipsam rerum maiores, similique error dolores inventore illum! Amet, cupiditate, nesciunt.</span>
+                    <span>Temporibus impedit fuga voluptatibus consequuntur fugiat porro recusandae. Esse quidem cupiditate autem doloribus quasi officiis ducimus ipsa voluptate sequi alias fugit, neque dolor asperiores qui deleniti, officia tenetur rerum vitae.</span>
+                    <span>Quasi velit consequuntur, facilis mollitia magni, voluptates. Provident quia ullam at repellat inventore facilis, beatae! Tempora ut libero adipisci, aut doloribus, cumque, magnam molestiae, dicta sed asperiores tempore praesentium eligendi!</span></p>
+            </div>
         </div>
-        
-         <div class="container text-justify col-md-6">
-        <p class="h2 text-center"><b>Donde encontrarnos</b></p>
-        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit perferendis, velit non quia atque nesciunt, rerum deserunt tempore dolorem! Ipsam rerum maiores, similique error dolores inventore illum! Amet, cupiditate, nesciunt.</span>
-            <span>Temporibus impedit fuga voluptatibus consequuntur fugiat porro recusandae. Esse quidem cupiditate autem doloribus quasi officiis ducimus ipsa voluptate sequi alias fugit, neque dolor asperiores qui deleniti, officia tenetur rerum vitae.</span>
-            <span>Quasi velit consequuntur, facilis mollitia magni, voluptates. Provident quia ullam at repellat inventore facilis, beatae! Tempora ut libero adipisci, aut doloribus, cumque, magnam molestiae, dicta sed asperiores tempore praesentium eligendi!</span></p>
+
     </div>
-</div>
-        
-    </div>
-   
+
     <div class="container-fluid text-center mt-3 ">
         <canvas id="canvas" width="900" height="179"></canvas>
     </div>
-    
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

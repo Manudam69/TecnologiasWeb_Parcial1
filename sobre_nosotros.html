@@ -8,9 +8,13 @@
     <link rel="stylesheet" href="./css/sobre_nosotros.css">
     <link rel="icon" href="./images/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Thasadith" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <script src="./js/contacto.js"></script>
+
 </head>
 
-<body>
+<body id="text_Body">
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <img src="./images/favicon.png" width="30" height="30" alt="">
@@ -31,6 +35,37 @@
                     <li class="nav-item">
                         <a class="nav-link " href="./contacto.html">Contacto</a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-font nav-link"></i> Fuentes</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="MySelectMenu">
+                            <option class="dropdown-item" onclick="changeFont (this);" value="'Thasadith', sans-serif" id="input-font">Thasadith',sans-serif</option>
+                            <option class="dropdown-item" id="input-font" onclick="changeFont (this);" value="Arial">Arial</option>
+                            <option class="dropdown-item" id="input-font" onclick="changeFont (this);" value="'Raleway', sans-serif">'Raleway', sans-serif;</option>
+
+
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-palette nav-link"></i> Colores</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="MySelectMenu">
+                            <option class="dropdown-item" onclick="changeBG (this);" value="#ffffff">Blanco</option>
+                            <option class="dropdown-item" onclick="changeBG (this);" value="#2f59e5">Azul</option>
+                            <option class="dropdown-item" onclick="changeBG (this);" value="#000000">Negro</option>
+                            <option class="dropdown-item" onclick="changeBG (this);" value="#17c624">Verde</option>
+                            <option class="dropdown-item" onclick="changeBG (this);" value="#eb7d10">Naranja</option>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-palette nav-link"></i> Color de fuente</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="MySelectMenu">
+                            <option class="dropdown-item" onclick=" colorFont (this);" value="#000000">Negro</option>
+                            <option class="dropdown-item" onclick=" colorFont (this);" value="#ffffff">Blanco</option>
+                            <option class="dropdown-item" onclick=" colorFont (this);" value="#0986f2">Azul</option>
+                            <option class="dropdown-item" onclick=" colorFont (this);" value="#f5ff00">Amarillo</option>
+                        </div>
+                    </li>
+
                 </ul>
             </div>
         </nav>
